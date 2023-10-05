@@ -3,7 +3,7 @@ const MY_QUERY = gql`
     badField # This field produces one or more errors
     goodField # This field is populated successfully
   }
-`;
+;
 
 function ShowingSomeErrors() {
   const { loading, error, data } = useQuery(MY_QUERY, { errorPolicy: 'all' });
